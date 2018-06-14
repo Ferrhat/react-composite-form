@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextAreaField renders properly 1`] = `
+<div>
+  <FormControl
+    bsClass="form-control"
+    componentClass="textarea"
+    onChange={[Function]}
+    type="text"
+    value=""
+  />
+  <div
+    className="validationErrorMessage"
+  />
+</div>
+`;

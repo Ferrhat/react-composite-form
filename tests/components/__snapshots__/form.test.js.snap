@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form renders properly 1`] = `
+<Uncontrolled(Panel)
+  className="panel-shadow panel-blue-cap"
+>
+  <PanelHeading
+    bsClass="panel"
+    componentClass="div"
+  >
+    <Row
+      bsClass="row"
+      componentClass="div"
+    >
+      <Col
+        bsClass="col"
+        componentClass="div"
+        xs={8}
+      >
+        <span />
+      </Col>
+      <Col
+        bsClass="col"
+        componentClass="div"
+        xs={4}
+      >
+        <ButtonToolbar
+          bsClass="btn-toolbar"
+          className="pull-right"
+          style={
+            Object {
+              "marginTop": -8,
+            }
+          }
+        >
+          <Button
+            active={false}
+            block={false}
+            bsClass="btn"
+            bsStyle="default"
+            disabled={false}
+            onClick={[Function]}
+          >
+            Hide
+          </Button>
+        </ButtonToolbar>
+      </Col>
+    </Row>
+  </PanelHeading>
+  <PanelBody
+    bsClass="panel"
+    collapsible={false}
+  >
+    <form
+      className="form-horizontal"
+      onChange={[Function]}
+      onSubmit={[Function]}
+    >
+      <div
+        className="panel-section"
+      >
+        <Button
+          active={false}
+          block={false}
+          bsClass="btn"
+          bsStyle="primary"
+          className="pull-right"
+          disabled={false}
+          type="submit"
+        >
+          Submit
+        </Button>
+      </div>
+    </form>
+  </PanelBody>
+</Uncontrolled(Panel)>
+`;

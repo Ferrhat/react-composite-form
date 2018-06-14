@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CreatableSelectField renders properly 1`] = `
+<CreatableSelect
+  backspaceRemoves={false}
+  disabled={true}
+  filterOptions={[Function]}
+  isLoading={true}
+  isOptionUnique={[Function]}
+  isValidNewOption={[Function]}
+  menuRenderer={[Function]}
+  newOptionCreator={[Function]}
+  onChange={[Function]}
+  options={Array []}
+  promptTextCreator={[Function]}
+  shouldKeyDownEventCreateNewOption={[Function]}
+  value={null}
+/>
+`;
