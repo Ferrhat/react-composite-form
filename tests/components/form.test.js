@@ -4,7 +4,7 @@ import Form from "../../lib/components/Form";
 
 
 describe('Form', () => {
-    const mockSubmitHandler = jest.fn();
+    const mockSubmitHandler = jest.fn(() => Promise.resolve());
     const mockChangeHandler = jest.fn();
     const form = shallow(<Form submitHandler={mockSubmitHandler} fieldKey={'name'} />);
 
@@ -16,13 +16,20 @@ describe('Form', () => {
         expect(form.find('Button').length).toEqual(2);
     });
 
-    it('calls the submithandler function', () => {
+    it('calls the submithandler function', (done) => {
         const event = {
             preventDefault() {},
             target: { name: 'testName', value: 'testValue' }
         };
-        form.find('form').simulate('submit', event);
-        expect(mockSubmitHandler).toBeCalled();
+        form.setState({values: 'testValue'}, () => {
+            expect(form.state('values')).toEqual('testValue');
+            form.find('form').simulate('submit', event);
+            expect(mockSubmitHandler).toBeCalled();
+            process.nextTick(() => {
+                expect(form.state('values')).toEqual({});
+                done();
+            })
+        });
     });
 
     it('generates a text field', () => {
