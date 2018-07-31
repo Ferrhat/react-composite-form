@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DateField renders properly 1`] = `
+<div>
+  <DatePicker
+    allowSameDay={false}
+    className="form-control"
+    dateFormat="YYYY-MM-DD"
+    dateFormatCalendar="MMMM YYYY"
+    disabled={false}
+    disabledKeyboardNavigation={true}
+    dropdownMode="scroll"
+    monthsShown={1}
+    onBlur={[Function]}
+    onChange={[Function]}
+    onClickOutside={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onMonthChange={[Function]}
+    onSelect={[Function]}
+    onYearChange={[Function]}
+    preventOpenOnFocus={false}
+    selected={null}
+    shouldCloseOnSelect={true}
+    showTimeSelect={false}
+    timeCaption="Time"
+    timeIntervals={30}
+    withPortal={false}
+  />
+  <div
+    className="validationErrorMessage"
+  />
+</div>
+`;

@@ -13,9 +13,9 @@ describe('CreatableSelectField', () => {
     });
 
     it('stops loading if it contains options', () => {
-        expect(creatableSelectField.prop('isLoading')).toEqual(true);
+        expect(creatableSelectField.find('CreatableSelect').prop('isLoading')).toEqual(true);
         creatableSelectField.setProps({options: [{label: 'Test', value: 1}]}, () => {
-            expect(creatableSelectField.prop('isLoading')).toEqual(false);
+            expect(creatableSelectField.find('CreatableSelect').prop('isLoading')).toEqual(false);
         });
     });
 
@@ -23,7 +23,7 @@ describe('CreatableSelectField', () => {
         const selection = {
             value: 'testValue',
         };
-        creatableSelectField.simulate('change', selection);
+        creatableSelectField.find('CreatableSelect').simulate('change', selection);
         expect(mockValueUpdateHandler).toBeCalledWith('testName', 'testValue');
         expect(mockChangeHandler).toBeCalledWith(selection);
     });
@@ -32,7 +32,7 @@ describe('CreatableSelectField', () => {
         const selection = {
             value: 1,
         };
-        creatableSelectField.simulate('change', selection);
+        creatableSelectField.find('CreatableSelect').simulate('change', selection);
         expect(mockValueUpdateHandler).toBeCalledWith('testName', 1);
         expect(mockChangeHandler).toBeCalledWith(selection);
     });

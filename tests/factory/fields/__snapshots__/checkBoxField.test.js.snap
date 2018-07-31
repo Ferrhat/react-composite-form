@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CheckBoxField renders properly 1`] = `
+<div>
+  <Switch
+    handleColor="white"
+    offColor="white"
+    onChange={[Function]}
+    onColor="#00C9FF"
+  />
+  <div
+    className="validationErrorMessage"
+  />
+</div>
+`;
