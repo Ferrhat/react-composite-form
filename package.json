@@ -56,7 +56,8 @@
       "!**/node_modules/**",
       "!**/library/**",
       "!**/coverage/**",
-      "!webpack.config.js"
+      "!webpack.config.js",
+      "!**/lib/index.js"
     ],
     "setupFiles": [
       "./tests/jestsetup.js"
