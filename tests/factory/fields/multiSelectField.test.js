@@ -6,7 +6,7 @@ import MultiSelectField from "../../../lib/factory/fields/MultiSelectField";
 describe('MultiSelectField', () => {
     const mockValueUpdateHandler = jest.fn();
     const mockChangeHandler = jest.fn();
-    const multiSelectField = shallow(<MultiSelectField valueUpdateHandler={mockValueUpdateHandler} changeHandler={mockChangeHandler} options={[]} name={'testName'} />);
+    let multiSelectField = shallow(<MultiSelectField valueUpdateHandler={mockValueUpdateHandler} changeHandler={mockChangeHandler} options={[]} name={'testName'} />);
 
     it('renders properly', () => {
         expect(multiSelectField).toMatchSnapshot();
@@ -29,6 +29,14 @@ describe('MultiSelectField', () => {
         expect(multiSelectField.find('Select').prop('isLoading')).toEqual(true);
         multiSelectField.setProps({options: [{label: 'Test', value: 1}]}, () => {
             expect(multiSelectField.find('Select').prop('isLoading')).toEqual(false);
+        });
+    });
+
+    it('changes the id, name to label, value', () => {
+        multiSelectField = mount(<MultiSelectField valueUpdateHandler={mockValueUpdateHandler} changeHandler={mockChangeHandler} options={[]} name={'testName'} />);
+        multiSelectField.setProps({options: [{name: 'Test', id: 1}], labelKey: 'name', valueKey: 'id'}, () => {
+            expect(multiSelectField.prop('options')).toEqual([{name: 'Test', id: 1}]);
+            expect(multiSelectField.find('Select').prop('options')).toEqual([{label: 'Test', value: 1}]);
         });
     });
 

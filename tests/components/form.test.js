@@ -33,9 +33,8 @@ describe('Form', () => {
     });
 
     it('generates a text field', () => {
-        form.setProps({fields: [{type: 'text', name: 'testField'}]}, () => {
-            expect(form.find('TextField').length).toEqual(1);
-        });
+        form.setProps({fields: [{type: 'text', name: 'testField'}]});
+        expect(form.find('TextField').length).toEqual(1);
     });
 
     it('stores the new value of a field', () => {

@@ -6,7 +6,7 @@ import SelectField from "../../../lib/factory/fields/SelectField";
 describe('SelectField', () => {
     const mockValueUpdateHandler = jest.fn();
     const mockChangeHandler = jest.fn();
-    const selectField = shallow(<SelectField valueUpdateHandler={mockValueUpdateHandler} changeHandler={mockChangeHandler} options={[]} name={'testName'} />);
+    let selectField = shallow(<SelectField valueUpdateHandler={mockValueUpdateHandler} changeHandler={mockChangeHandler} options={[]} name={'testName'} />);
 
     it('renders properly', () => {
         expect(selectField).toMatchSnapshot();
@@ -29,6 +29,14 @@ describe('SelectField', () => {
         expect(selectField.find('Select').prop('isLoading')).toEqual(true);
         selectField.setProps({options: [{label: 'Test', value: 1}]}, () => {
             expect(selectField.find('Select').prop('isLoading')).toEqual(false);
+        });
+    });
+
+    it('changes the id, name to label, value', () => {
+        selectField = mount(<SelectField valueUpdateHandler={mockValueUpdateHandler} changeHandler={mockChangeHandler} options={[]} name={'testName'} />);
+        selectField.setProps({options: [{name: 'Test', id: 1}], labelKey: 'name', valueKey: 'id'}, () => {
+            expect(selectField.prop('options')).toEqual([{name: 'Test', id: 1}]);
+            expect(selectField.find('Select').prop('options')).toEqual([{label: 'Test', value: 1}]);
         });
     });
 

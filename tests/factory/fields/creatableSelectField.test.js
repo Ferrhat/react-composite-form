@@ -6,7 +6,7 @@ import CreatableSelectField from "../../../lib/factory/fields/CreatableSelectFie
 describe('CreatableSelectField', () => {
     const mockValueUpdateHandler = jest.fn();
     const mockChangeHandler = jest.fn();
-    const creatableSelectField = shallow(<CreatableSelectField valueUpdateHandler={mockValueUpdateHandler} changeHandler={mockChangeHandler} options={[]} name={'testName'} />);
+    let creatableSelectField = shallow(<CreatableSelectField valueUpdateHandler={mockValueUpdateHandler} changeHandler={mockChangeHandler} options={[]} name={'testName'} />);
 
     it('renders properly', () => {
         expect(creatableSelectField).toMatchSnapshot();
@@ -35,6 +35,16 @@ describe('CreatableSelectField', () => {
         creatableSelectField.find('CreatableSelect').simulate('change', selection);
         expect(mockValueUpdateHandler).toBeCalledWith('testName', 1);
         expect(mockChangeHandler).toBeCalledWith(selection);
+    });
+
+    it('changes the id, name to label, value', () => {
+        creatableSelectField = mount(<CreatableSelectField valueUpdateHandler={mockValueUpdateHandler} changeHandler={mockChangeHandler} options={[]} labelKey={'name'} valueKey={'id'} name={'testName'} />);
+        creatableSelectField.setProps({options: [{name: 'Test', id: 1}]}, () => {
+            expect(creatableSelectField.prop('options')).toEqual([{name: 'Test', id: 1}]);
+            expect(creatableSelectField.find('CreatableSelect').prop('options')).toEqual([{label: 'Test', value: 1}]);
+            creatableSelectField.setProps({notOptions: []});
+            expect(creatableSelectField.prop('options')).toEqual([{name: 'Test', id: 1}]);
+        });
     });
 
 });

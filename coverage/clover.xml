@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1533116549412" clover="3.2.0">
-  <project timestamp="1533116549412" name="All files">
-    <metrics statements="123" coveredstatements="122" conditionals="39" coveredconditionals="36" methods="42" coveredmethods="39" elements="204" coveredelements="197" complexity="0" loc="123" ncloc="123" packages="5" files="12" classes="12">
+<coverage generated="1536584066874" clover="3.2.0">
+  <project timestamp="1536584066874" name="All files">
+    <metrics statements="132" coveredstatements="131" conditionals="41" coveredconditionals="39" methods="47" coveredmethods="44" elements="220" coveredelements="214" complexity="0" loc="132" ncloc="132" packages="5" files="12" classes="12">
       <package name="lib.actions">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-        <file name="index.js" path="C:\Users\vargasud\Desktop\react-composite-form\lib\actions\index.js">
+        <file name="index.js" path="C:\wamp64\www\react-composite-form\lib\actions\index.js">
           <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
           <line num="4" count="17" type="stmt"/>
           <line num="5" count="2" type="stmt"/>
@@ -14,7 +14,7 @@
       </package>
       <package name="lib.components">
         <metrics statements="37" coveredstatements="36" conditionals="12" coveredconditionals="11" methods="16" coveredmethods="13"/>
-        <file name="Form.js" path="C:\Users\vargasud\Desktop\react-composite-form\lib\components\Form.js">
+        <file name="Form.js" path="C:\wamp64\www\react-composite-form\lib\components\Form.js">
           <metrics statements="37" coveredstatements="36" conditionals="12" coveredconditionals="11" methods="16" coveredmethods="13"/>
           <line num="12" count="2" type="stmt"/>
           <line num="14" count="2" type="stmt"/>
@@ -57,7 +57,7 @@
       </package>
       <package name="lib.factory">
         <metrics statements="22" coveredstatements="22" conditionals="9" coveredconditionals="9" methods="2" coveredmethods="2"/>
-        <file name="formFieldFactory.js" path="C:\Users\vargasud\Desktop\react-composite-form\lib\factory\formFieldFactory.js">
+        <file name="formFieldFactory.js" path="C:\wamp64\www\react-composite-form\lib\factory\formFieldFactory.js">
           <metrics statements="22" coveredstatements="22" conditionals="9" coveredconditionals="9" methods="2" coveredmethods="2"/>
           <line num="16" count="11" type="stmt"/>
           <line num="32" count="13" type="stmt"/>
@@ -84,8 +84,8 @@
         </file>
       </package>
       <package name="lib.factory.fields">
-        <metrics statements="56" coveredstatements="56" conditionals="18" coveredconditionals="16" methods="22" coveredmethods="22"/>
-        <file name="CheckBoxField.js" path="C:\Users\vargasud\Desktop\react-composite-form\lib\factory\fields\CheckBoxField.js">
+        <metrics statements="65" coveredstatements="65" conditionals="20" coveredconditionals="19" methods="27" coveredmethods="27"/>
+        <file name="CheckBoxField.js" path="C:\wamp64\www\react-composite-form\lib\factory\fields\CheckBoxField.js">
           <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
           <line num="7" count="1" type="stmt"/>
           <line num="9" count="1" type="stmt"/>
@@ -93,19 +93,24 @@
           <line num="11" count="1" type="stmt"/>
           <line num="14" count="1" type="stmt"/>
         </file>
-        <file name="CreatableSelectField.js" path="C:\Users\vargasud\Desktop\react-composite-form\lib\factory\fields\CreatableSelectField.js">
-          <metrics statements="9" coveredstatements="9" conditionals="6" coveredconditionals="5" methods="4" coveredmethods="4"/>
-          <line num="8" count="1" type="stmt"/>
-          <line num="9" count="1" type="stmt"/>
-          <line num="15" count="4" type="stmt"/>
-          <line num="17" count="4" type="stmt"/>
-          <line num="18" count="2" type="cond" truecount="3" falsecount="1"/>
-          <line num="19" count="2" type="stmt"/>
-          <line num="23" count="2" type="stmt"/>
-          <line num="24" count="2" type="stmt"/>
-          <line num="27" count="4" type="stmt"/>
+        <file name="CreatableSelectField.js" path="C:\wamp64\www\react-composite-form\lib\factory\fields\CreatableSelectField.js">
+          <metrics statements="14" coveredstatements="14" conditionals="8" coveredconditionals="8" methods="7" coveredmethods="7"/>
+          <line num="8" count="2" type="stmt"/>
+          <line num="9" count="2" type="stmt"/>
+          <line num="11" count="2" type="stmt"/>
+          <line num="17" count="3" type="cond" truecount="2" falsecount="0"/>
+          <line num="18" count="2" type="stmt"/>
+          <line num="25" count="4" type="stmt"/>
+          <line num="29" count="7" type="stmt"/>
+          <line num="31" count="7" type="stmt"/>
+          <line num="32" count="2" type="cond" truecount="4" falsecount="0"/>
+          <line num="33" count="1" type="stmt"/>
+          <line num="37" count="2" type="stmt"/>
+          <line num="38" count="2" type="stmt"/>
+          <line num="41" count="7" type="stmt"/>
+          <line num="57" count="3" type="stmt"/>
         </file>
-        <file name="DateField.js" path="C:\Users\vargasud\Desktop\react-composite-form\lib\factory\fields\DateField.js">
+        <file name="DateField.js" path="C:\wamp64\www\react-composite-form\lib\factory\fields\DateField.js">
           <metrics statements="6" coveredstatements="6" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
           <line num="10" count="2" type="stmt"/>
           <line num="12" count="2" type="stmt"/>
@@ -114,7 +119,7 @@
           <line num="15" count="2" type="stmt"/>
           <line num="17" count="2" type="stmt"/>
         </file>
-        <file name="FileInputField.js" path="C:\Users\vargasud\Desktop\react-composite-form\lib\factory\fields\FileInputField.js">
+        <file name="FileInputField.js" path="C:\wamp64\www\react-composite-form\lib\factory\fields\FileInputField.js">
           <metrics statements="14" coveredstatements="14" conditionals="4" coveredconditionals="3" methods="4" coveredmethods="4"/>
           <line num="8" count="2" type="stmt"/>
           <line num="10" count="2" type="stmt"/>
@@ -131,23 +136,27 @@
           <line num="29" count="2" type="stmt"/>
           <line num="34" count="3" type="stmt"/>
         </file>
-        <file name="MultiSelectField.js" path="C:\Users\vargasud\Desktop\react-composite-form\lib\factory\fields\MultiSelectField.js">
-          <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
-          <line num="7" count="2" type="stmt"/>
-          <line num="9" count="2" type="stmt"/>
-          <line num="10" count="1" type="stmt"/>
-          <line num="11" count="1" type="stmt"/>
-          <line num="14" count="2" type="stmt"/>
+        <file name="MultiSelectField.js" path="C:\wamp64\www\react-composite-form\lib\factory\fields\MultiSelectField.js">
+          <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
+          <line num="7" count="4" type="stmt"/>
+          <line num="9" count="4" type="stmt"/>
+          <line num="11" count="4" type="stmt"/>
+          <line num="12" count="1" type="stmt"/>
+          <line num="13" count="1" type="stmt"/>
+          <line num="16" count="4" type="stmt"/>
+          <line num="33" count="3" type="stmt"/>
         </file>
-        <file name="SelectField.js" path="C:\Users\vargasud\Desktop\react-composite-form\lib\factory\fields\SelectField.js">
-          <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
-          <line num="7" count="2" type="stmt"/>
-          <line num="9" count="2" type="stmt"/>
-          <line num="10" count="1" type="stmt"/>
-          <line num="11" count="1" type="stmt"/>
-          <line num="14" count="2" type="stmt"/>
+        <file name="SelectField.js" path="C:\wamp64\www\react-composite-form\lib\factory\fields\SelectField.js">
+          <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
+          <line num="7" count="4" type="stmt"/>
+          <line num="9" count="4" type="stmt"/>
+          <line num="11" count="4" type="stmt"/>
+          <line num="12" count="1" type="stmt"/>
+          <line num="13" count="1" type="stmt"/>
+          <line num="16" count="4" type="stmt"/>
+          <line num="31" count="3" type="stmt"/>
         </file>
-        <file name="TextAreaField.js" path="C:\Users\vargasud\Desktop\react-composite-form\lib\factory\fields\TextAreaField.js">
+        <file name="TextAreaField.js" path="C:\wamp64\www\react-composite-form\lib\factory\fields\TextAreaField.js">
           <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
           <line num="8" count="1" type="stmt"/>
           <line num="12" count="1" type="stmt"/>
@@ -156,7 +165,7 @@
           <line num="16" count="1" type="stmt"/>
           <line num="19" count="1" type="stmt"/>
         </file>
-        <file name="TextField.js" path="C:\Users\vargasud\Desktop\react-composite-form\lib\factory\fields\TextField.js">
+        <file name="TextField.js" path="C:\wamp64\www\react-composite-form\lib\factory\fields\TextField.js">
           <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
           <line num="8" count="2" type="stmt"/>
           <line num="12" count="4" type="stmt"/>
@@ -168,7 +177,7 @@
       </package>
       <package name="tests">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <file name="jestsetup.js" path="C:\Users\vargasud\Desktop\react-composite-form\tests\jestsetup.js">
+        <file name="jestsetup.js" path="C:\wamp64\www\react-composite-form\tests\jestsetup.js">
           <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
           <line num="3" count="11" type="stmt"/>
           <line num="5" count="11" type="stmt"/>
