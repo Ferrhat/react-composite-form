@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1536584066874" clover="3.2.0">
-  <project timestamp="1536584066874" name="All files">
-    <metrics statements="132" coveredstatements="131" conditionals="41" coveredconditionals="39" methods="47" coveredmethods="44" elements="220" coveredelements="214" complexity="0" loc="132" ncloc="132" packages="5" files="12" classes="12">
+<coverage generated="1536841497104" clover="3.2.0">
+  <project timestamp="1536841497105" name="All files">
+    <metrics statements="132" coveredstatements="131" conditionals="47" coveredconditionals="45" methods="47" coveredmethods="44" elements="226" coveredelements="220" complexity="0" loc="132" ncloc="132" packages="5" files="12" classes="12">
       <package name="lib.actions">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <file name="index.js" path="C:\wamp64\www\react-composite-form\lib\actions\index.js">
@@ -84,7 +84,7 @@
         </file>
       </package>
       <package name="lib.factory.fields">
-        <metrics statements="65" coveredstatements="65" conditionals="20" coveredconditionals="19" methods="27" coveredmethods="27"/>
+        <metrics statements="65" coveredstatements="65" conditionals="26" coveredconditionals="25" methods="27" coveredmethods="27"/>
         <file name="CheckBoxField.js" path="C:\wamp64\www\react-composite-form\lib\factory\fields\CheckBoxField.js">
           <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
           <line num="7" count="1" type="stmt"/>
@@ -94,7 +94,7 @@
           <line num="14" count="1" type="stmt"/>
         </file>
         <file name="CreatableSelectField.js" path="C:\wamp64\www\react-composite-form\lib\factory\fields\CreatableSelectField.js">
-          <metrics statements="14" coveredstatements="14" conditionals="8" coveredconditionals="8" methods="7" coveredmethods="7"/>
+          <metrics statements="14" coveredstatements="14" conditionals="10" coveredconditionals="10" methods="7" coveredmethods="7"/>
           <line num="8" count="2" type="stmt"/>
           <line num="9" count="2" type="stmt"/>
           <line num="11" count="2" type="stmt"/>
@@ -108,7 +108,7 @@
           <line num="37" count="2" type="stmt"/>
           <line num="38" count="2" type="stmt"/>
           <line num="41" count="7" type="stmt"/>
-          <line num="57" count="3" type="stmt"/>
+          <line num="58" count="3" type="stmt"/>
         </file>
         <file name="DateField.js" path="C:\wamp64\www\react-composite-form\lib\factory\fields\DateField.js">
           <metrics statements="6" coveredstatements="6" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
@@ -137,24 +137,24 @@
           <line num="34" count="3" type="stmt"/>
         </file>
         <file name="MultiSelectField.js" path="C:\wamp64\www\react-composite-form\lib\factory\fields\MultiSelectField.js">
-          <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
+          <metrics statements="7" coveredstatements="7" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="3"/>
           <line num="7" count="4" type="stmt"/>
           <line num="9" count="4" type="stmt"/>
           <line num="11" count="4" type="stmt"/>
           <line num="12" count="1" type="stmt"/>
           <line num="13" count="1" type="stmt"/>
           <line num="16" count="4" type="stmt"/>
-          <line num="33" count="3" type="stmt"/>
+          <line num="34" count="3" type="stmt"/>
         </file>
         <file name="SelectField.js" path="C:\wamp64\www\react-composite-form\lib\factory\fields\SelectField.js">
-          <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
+          <metrics statements="7" coveredstatements="7" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="3"/>
           <line num="7" count="4" type="stmt"/>
           <line num="9" count="4" type="stmt"/>
           <line num="11" count="4" type="stmt"/>
           <line num="12" count="1" type="stmt"/>
           <line num="13" count="1" type="stmt"/>
           <line num="16" count="4" type="stmt"/>
-          <line num="31" count="3" type="stmt"/>
+          <line num="32" count="3" type="stmt"/>
         </file>
         <file name="TextAreaField.js" path="C:\wamp64\www\react-composite-form\lib\factory\fields\TextAreaField.js">
           <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
