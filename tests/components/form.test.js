@@ -6,7 +6,7 @@ import Form from "../../lib/components/Form";
 describe('Form', () => {
     const mockSubmitHandler = jest.fn(() => Promise.resolve());
     const mockChangeHandler = jest.fn();
-    const form = shallow(<Form submitHandler={mockSubmitHandler} fieldKey={'name'} />);
+    let form = shallow(<Form submitHandler={mockSubmitHandler} fieldKey={'name'} />);
 
     it('renders properly', () => {
         expect(form).toMatchSnapshot();
@@ -68,4 +68,16 @@ describe('Form', () => {
             expect(form.state('isValid')).toEqual(false);
         }, 1000);
     });
+
+    it('displays the form in closed state by default', () => {
+        form = shallow(<Form submitHandler={mockSubmitHandler} fieldKey={'name'} open={false}/>);
+        expect(form.find('Button').length).toEqual(1);
+    });
+
+    it('displays custom content in the form', () => {
+        form = shallow(<Form submitHandler={mockSubmitHandler} fieldKey={'name'}><h1>{'test content'}</h1></Form>);
+        expect(form.find('h1').length).toEqual(1);
+        expect(form.find('h1').text()).toEqual('test content');
+    });
+
 });
